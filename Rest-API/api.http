@@ -1,0 +1,35 @@
+GET http://localhost:3000
+
+###
+
+GET http://localhost:3000/blog
+
+###
+
+Post http://localhost:3000/blog
+Content-Type: application/json
+
+{
+    "title": "My First post",
+    "content": "This is my first post"
+}
+
+###
+
+GET http://localhost:3000/blog/2
+
+###
+
+PUT http://localhost:3000/blog/1
+content-type: application/json
+
+{
+    "id": 1,
+    "title": "My first updated post",
+    "content": "This is my first updated post"
+}
+
+
+###
+
+DELETE  http://localhost:3000/blog/1
